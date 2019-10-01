@@ -1,6 +1,6 @@
 # cmd-line-wiki
 
-Browse Wikipedia content in the terminal using the `less` program. Requires Unix shell and a working internet connection to run.
+Browse content from English-language Wikipedia (en.wikipedia.org) in the terminal using the `less` program. Requires Unix shell and a working internet connection to run.
 
 ## Usage
 

@@ -1,1 +1,13 @@
 #!/bin/sh
+
+# Early return if no argument or more than one argument supplied
+if [ "$#" -eq 0 ]; then
+  echo "No argument supplied, exiting script."
+  exit 1
+elif [ "$#" -gt 1 ]; then
+  echo "Too many arguments supplied, exiting script."
+  exit 1
+fi
+
+# Grab content from Wikipedia
+curl -s "https://en.wikipedia.org/w/api.php?action=parse&format=json&redirects=1&page=$1" | less
